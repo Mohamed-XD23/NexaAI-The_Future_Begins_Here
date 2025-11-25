@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexaAI - The Future Begins Here</title>
+    <!-- FontAwesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body class="relative w-full h-screen mx-auto bg-light  font-sansation ">
+    <!-- Background shapes -->
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/45 rounded-full blur-3xl animate-shape">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/45 rounded-full blur-3xl animate-shape animation-delay-2000 ">
+        </div>
+        <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/45 rounded-full blur-3xl animate-shape animation-delay-4000 ">
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class=" glass bg-light/30 fixed top-0  w-full z-50 text-dark px-6 py-4 mb-8 ">
+        <div class="max-w-main mx-auto flex flex-row justify-between ">
+            <div class="flex flex-row gap-2 justify-center items-center">
+                <!-- Company Logo -->
+                <span
+                    class="text-light text-4xl font-bold bg-primary px-2.5 py-1 rounded-xl shadow-primary shadow-xl">N</span>
+                <!-- Company Name -->
+                <h1 class=" text-2xl font-bold">NexaAI
+                    <span class="text-xl font-normal">Solutions</span>
+                </h1>
+            </div>
+            <!-- Nav Bar Links -->
+            <nav class="hidden md:flex items-center ">
+                <ul class="flex md:gap-0.5 lg:gap-4 font-bold gap-12 ">
+                    <li class="px-4"><a
+                            class="p-2 hover:cursor-pointer hover:text-primary hover:border-b-primary/80 hover:border-b-2"
+                            href="#home">Home</a>
+                    </li>
+                    <li class="px-4"><a
+                            class="p-2 hover:cursor-pointer hover:text-primary hover:border-b-primary/80 hover:border-b-2"
+                            href="#features">Features</a></li>
+                    <li class="px-4"><a
+                            class="p-2 hover:cursor-pointer hover:text-primary hover:border-b-primary/80 hover:border-b-2"
+                            href="#about">About</a>
+                    </li>
+                    <li class="px-4"><a
+                            class="p-2 hover:cursor-pointer hover:text-primary hover:border-b-primary/80 hover:border-b-2"
+                            href="#team">Our
+                            Team</a>
+                    </li>
+                    <li class="px-4"><a
+                            class="p-2 hover:cursor-pointer hover:text-primary hover:border-b-primary/80 hover:border-b-2"
+                            href="#testimonials">Testimonials</a></li>
+                </ul>
+                <button id="theme-toggle"
+                    class="p-2 ml-5 rounded-full hover:bg-gray-800 transition-colors relative overflow-hidden">
+                    <div class="relative z-10">
+                        <svg id="sun-icon" class="w-6 h-6 hidden text-yellow-500" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                            </path>
+                        </svg>
+                        <svg id="moon-icon" class="w-6 h-6 text-gray-700 hover:text-light " fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                            </path>
+                        </svg>
+                    </div>
+                </button>
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-dark hover:cursor-pointer">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="hidden md:hidden glass glass-dark border-t border-gray-200 dark:border-gray-700">
+                <div class="container mx-auto px-6 py-6 flex flex-col gap-6">
+                    <a href="#features" class="text-lg font-medium hover:text-primary transition-colors">Features</a>
+                    <a href="#services" class="text-lg font-medium hover:text-primary transition-colors">About</a>
+                    <a href="#about" class="text-lg font-medium hover:text-primary transition-colors">Our Team/a>
+                        <a href="#team"
+                            class="text-lg font-medium hover:text-primary transition-colors">Testimonials</a>
+                        <button id="theme-toggle-mobile"
+                            class="flex items-center gap-3 text-lg font-medium hover:text-primary transition-colors">
+                            <span>Dark Mode</span>
+                        </button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center pt-20 relative ">
+            <div class="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center justify-between gap-16">
+                <div class="lg:w-1/2 text-center">
+                    <div
+                        class="w-2/3 mx-auto capitalize flex justify-center items-center gap-2 bg-primary/10 border border-primary/20  px-5 py-2 mb-6 rounded-full text-dark text-xl font-semibold tracking-wide">
+                        The next generation of AI
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="text-primary size-7">
+                            <path fill-rule="evenodd"
+                                d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 0 1 .75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 0 1 9.75 22.5a.75.75 0 0 1-.75-.75v-4.131A15.838 15.838 0 0 1 6.382 15H2.25a.75.75 0 0 1-.75-.75 6.75 6.75 0 0 1 7.815-6.666ZM15 6.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z"
+                                clip-rule="evenodd" />
+                            <path
+                                d="M5.26 17.242a.75.75 0 1 0-.897-1.203 5.243 5.243 0 0 0-2.05 5.022.75.75 0 0 0 .625.627 5.243 5.243 0 0 0 5.022-2.051.75.75 0 1 0-1.202-.897 3.744 3.744 0 0 1-3.008 1.51c0-1.23.592-2.323 1.51-3.008Z" />
+                        </svg>
+
+
+                    </div>
+                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight">
+                        Turn your ideas into <br>
+                        <span class="text-gradient">digital reality</span>
+                    </h1>
+                    <p class="text-xl text-dark mb-10 max-w-2xl mx-auto lg:mx-0">
+                        NexaAI builds custom artificial intelligence solutions that help businesses grow, automate work,
+                        and make smarter decisions.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-5 justify-center lg:justify-center">
+                        <a href="#contact"
+                            class="glass flex justify-center items-center gap-1 bg-primary/80 text-light px-10 py-4 rounded-full text-lg font-bold hover:shadow-lg hover:shadow-dark/30 transition-all transform hover:-translate-y-1 ">
+                            Get Started
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 21" stroke-width="3"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+
+
+                        </a>
+                        <a href="#demo"
+                            class="glass-dark flex justify-center items-center gap-1 text-dark px-10 py-4 rounded-full text-lg font-bold hover:shadow-lg hover:shadow-dark/30 transition-all transform hover:-translate-y-1">
+                            Watch demo
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" fill="currentColor"
+                                class=" size-6">
+                                <path fill-rule="evenodd"
+                                    d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="lg:w-1/2 flex items-center justify-center ">
+                    <div class="relative ">
+                        <img src="./img/hero.png" alt="AI Robot" class="w-auto h-80 md:h-120 rounded-3xl shadow-2xl ">
+                        <!-- Floating Cards -->
+                        <div
+                            class="hidden absolute -bottom-10 -left-10 glass-dark bg-dark/60 p-4 rounded-2xl shadow-xl animate-bounce duration-1000 lg:block ">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-10 h-10 text-2xl text-center font-extrabold bg-green-200 rounded-full flex items-center justify-center text-secondary/80">
+                                    ✓</div>
+                                <div>
+                                    <p class="text-lg text-secondary">Analysis Accuracy</p>
+                                    <p class="font-bold text-light text-center">99.9%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="min-h-screen flex flex-col justify-center items-center pt-10 mt-10">
+            <div class="flex flex-col items-center gap-6">
+                <h2 class="text-5xl font-bold">Our Features</h2>
+                <p class="text-lg text-dark mx-10">We offer cutting-edge
+                    technologies that
+                    give you a
+                    competitive edge in the
+                    market, with a complete focus on quality and performance.</p>
+            </div>
+
+            <!-- Features Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-20 gap-6 mx-10">
+                <!-- Feature 1 -->
+                <div
+                    class=" card glass-dark bg-dark/30 flex flex-col items-center gap-4 hover:shadow-2xl hover:shadow-dark/40 transition-all transform hover:bg-dark/50">
+                    <div class="flex items-center justify-center gap-2 p-4">
+                        <i class="fa-solid fa-bolt text-4xl text-dark"></i>
+                        <h3 class="text-lg font-semibold">Lightning Fast</h3>
+                    </div>
+                    <div class="text-dark">
+                        <p class="text-lg">Process and analyze your data up to 10x faster with optimized
+                            AI pipelines.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div
+                    class=" card glass-dark bg-dark/30  flex flex-col items-center gap-4 hover:shadow-2xl hover:shadow-dark/40 transition-all transform hover:bg-dark/50">
+                    <div class="flex items-center justify-center gap-2 p-4 ">
+                        <i class="fa-solid fa-building-shield text-4xl text-dark"></i>
+                        <h3 class="text-lg font-semibold">Enterprise-Grade Security</h3>
+                    </div>
+                    <div class="text-dark">
+                        <p class="text-lg">Protect your data with end-to-end encryption and strict access control.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div
+                    class=" card glass-dark bg-dark/30 flex flex-col items-center gap-4 hover:shadow-2xl hover:shadow-dark/40 transition-all transform hover:bg-dark/50">
+                    <div class="flex items-center justify-center gap-2 p-4 ">
+                        <i class="fa-solid fa-chart-simple text-4xl text-dark"></i>
+                        <h3 class="text-lg font-semibold">Smart Analytics</h3>
+                    </div>
+                    <div class="text-dark">
+                        <p class="text-lg">Get clear dashboards, reports, and insights powered by machine learning.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div
+                    class=" card glass-dark bg-dark/30  flex flex-col items-center gap-4 hover:shadow-2xl hover:shadow-dark/40 transition-all transform hover:bg-dark/50">
+                    <div class="flex items-center justify-center gap-2 p-4 ">
+                        <i class="fa-solid fa-link text-4xl text-dark"></i>
+                        <h3 class="text-lg font-semibold">Easy Integration</h3>
+                    </div>
+                    <div class="text-dark">
+                        <p class="text-lg">Connect NexaAI to your existing tools using our simple API and webhooks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="min-h-screen glass bg-light/40 flex flex-col justify-center items-center p-10">
+            <div class="flex flex-col items-center gap-6">
+                <h2 class="text-5xl font-bold">Our Services</h2>
+                <p class="text-lg text-dark mx-10">We offer a range of services to help you leverage the power of AI
+                    and machine learning to improve your business processes and decision-making.</p>
+            </div>
+            <!-- Services Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 pt-20 gap-6 mx-10">
+                <!-- Service 1 -->
+                <div
+                    class="card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-primary/30 transition-all ease-in-out ">
+                    <div class="flex items-center justify-center gap-2 p-4 ">
+                        <i class="fa-solid fa-brain text-4xl text-dark"></i>
+                        <h3 class="text-2xl font-semibold">Custom AI Model Development</h3>
+                    </div>
+                    <div class="text-dark">
+                        <p class="text-xl">We design and train machine learning models tailored to your specific use
+                            case, from computer vision to natural language processing.</p>
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="text-primary absolute right-10 bottom-5 text-lg font-semibold hover:underline transition-all ease-in-out ">Read
+                            More<i class="fa-solid fa-arrow-right-long pl-3"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class=" card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-secondary/30 transition-all ease-in-out ">
+                    <div class="flex items-center justify-center gap-2 p-4 ">
+                        <i class="fa-solid fa-headset text-4xl text-dark"></i>
+                        <h3 class="text-2xl font-semibold">AI Chatbots & Virtual Assistants</h3>
+                    </div>
+                    <div class="text-dark">
+                        <p class="text-xl">24/7 intelligent support for your customers on web, mobile, and social media
+                            platforms powered by advanced conversational AI.</p>
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="text-emerald-600 absolute right-10 bottom-5 text-lg font-semibold hover:underline transition-all ease-in-out ">Read
+                            More<i class="fa-solid fa-arrow-right-long pl-3"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class=" card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-accent/40 to-accent/10 transition-all ease-in-out">
+                    <div class="flex items-center justify-center gap-2 p-4 ">
+                        <i class="fa-solid fa-chart-bar text-4xl text-dark"></i>
+                        <h3 class="text-2xl font-semibold">Predictive Analytics</h3>
+                    </div>
+                    <div class="text-dark">
+                        <p class="text-xl">Forecast demand, detect trends, and improve decision-making with predictive
+                            models that learn from your business data.</p>
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="text-amber-600 absolute right-10 bottom-5 text-lg font-semibold hover:underline transition-all ease-in-out ">Read
+                            More<i class="fa-solid fa-arrow-right-long pl-3"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="relative card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-fuchsia-600/20 to-fuchsia-200/20 transition-all ease-in-out ">
+                    <div class="flex items-center justify-center gap-2 p-4 ">
+                        <i class="fa-solid fa-gears text-4xl text-dark"></i>
+                        <h3 class="text-2xl font-semibold">Process Automation</h3>
+                    </div>
+                    <div class="text-dark">
+                        <p class="text-xl">Automate repetitive workflows using AI and rule-based engines, saving your
+                            team up to 70% of their time.</p>
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="text-fuchsia-600 absolute right-10 bottom-5 text-lg font-semibold hover:underline transition-all ease-in-out ">Read
+                            More<i class="fa-solid fa-arrow-right-long pl-3"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="min-h-screen glass-dark bg-dark/20 flex flex-col justify-center items-center p-10">
+            <div class="flex flex-col items-center gap-6">
+                <h2 class="text-5xl font-bold">About Us</h2>
+                <p class="text-lg text-dark mx-10">Discover our journey, values, and commitment to making artificial
+                    intelligence accessible and impactful for businesses worldwide.</p>
+            </div>
+            <div
+                class="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center justify-start gap-16 m-10">
+                <div class="flex flex-col gap-6">
+                    <p class="text-xl text-dark"><span class="font-bold text-primary text-2xl">NexaAI Solutions</span>
+                        is a
+                        technology company focused on building
+                        practical, business-ready AI products. Founded in 2020 by a group of engineers and data
+                        scientists,
+                        our mission is to make artificial intelligence accessible to companies of all sizes.</p>
+
+                    <div class="text-xl font-bold text-dark flex flex-col gap-2">We believe that AI should be:
+                        <p class="text-xl font-normal"> <span class="text-2xl font-semibold text-secondary">Practical :
+                            </span> Solving
+                            real
+                            business
+                            challenges</p>
+                        <p class="text-xl font-normal"> <span class="text-2xl font-semibold text-secondary">Accessible :
+                            </span>
+                            Available to
+                            companies
+                            of all sizes</p>
+                        <p class="text-xl font-normal"> <span class="text-2xl font-semibold text-secondary">Transparent
+                                : </span> Clear,
+                            explainable
+                            results</p>
+                        <p class="text-xl font-normal"> <span class="text-2xl font-semibold text-secondary">Ethical :
+                            </span> Built with
+                            responsibility
+                            and fairness</p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="./img/About.jpg" class="min-w-full h-1/4 sm:h-1/4 md:min-h-full rounded-3xl shadow-2xl "
+                        alt="Modern tech startup workspace with collaborative meeting rooms, stylish seating, and industrial design elements">
+
+                    <!-- Card -->
+                    <div
+                        class="hidden absolute -bottom-10 -left-10 glass-dark bg-dark/60 p-4 rounded-2xl shadow-xl lg:block ">
+                        <div class="flex items-center gap-3 px-2 py-1">
+                            <div class="flex flex-col items-center">
+                                <p class="font-bold text-4xl text-secondary text-center">+50</p>
+                                <p class="text-lg text-light">Members</p>
+                            </div>
+                            <div class="w-1 h-16 bg-light rounded-full">
+                                <!-- Just a bar to separate  -->
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <p class="font-bold text-4xl text-primary text-center">+200</p>
+                                <p class="text-lg text-light">Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

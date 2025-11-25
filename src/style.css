@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansation:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-family-sansation: "Sansation", sans-serif;
+  --min-width-main: 1280px;
+  --max-width-main: 1280px;
+  --color-primary: #3b82f6;
+  --color-secondary: #10b981;
+  --color-accent: #f59e0b;
+  --color-dark: #1f2937;
+  --color-light: #f9fafb;
+  --background-color-dark: #1f2937;
+  --background-color-light: #f9fafb;
+  --animate-shape: blob 7s infinite, sliderShape 3s linear infinite;
+
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+  @keyframes sliderShape {
+    0%,
+    100% {
+      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+    34% {
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+    }
+    50% {
+      transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+      transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    }
+  }
+}
+
+@layer utilities {
+  .dark {
+    --color-primary: #1644a6;
+    --color-secondary: #026949;
+    --color-accent: #a85b03;
+    --color-light: #f8fafc;
+    --color-dark: #1f2937;
+    --background-color-dark: #0f172a;
+  }
+
+  .glass {
+    @apply backdrop-blur-2xl shadow-dark border border-white/20;
+  }
+
+  .glass-dark {
+    @apply backdrop-blur-lg border border-dark/30 shadow-xl;
+  }
+
+  .card {
+    @apply h-full px-8 py-10 rounded-3xl;
+  }
+
+  .card-big {
+    @apply h-full px-10 py-15 rounded-3xl;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-200 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-400 rounded-full;
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
