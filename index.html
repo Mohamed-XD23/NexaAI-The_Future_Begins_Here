@@ -41,35 +41,37 @@
             <nav class="hidden md:flex items-center ">
                 <ul class="flex md:gap-0.5 lg:gap-4 font-bold gap-12 ">
                     <li class="px-4"><a
-                            class="p-2 hover:cursor-pointer hover:text-primary hover:border-b-primary/80 hover:border-b-2"
+                            class="p-2 hover:cursor-pointer hover:text-light hover:border-b-light/80 hover:border-b-2"
                             href="#home">Home</a>
                     </li>
                     <li class="px-4"><a
-                            class="p-2 hover:cursor-pointer hover:text-primary hover:border-b-primary/80 hover:border-b-2"
+                            class="p-2 hover:cursor-pointer hover:text-light hover:border-b-light/80 hover:border-b-2"
                             href="#features">Features</a></li>
                     <li class="px-4"><a
-                            class="p-2 hover:cursor-pointer hover:text-primary hover:border-b-primary/80 hover:border-b-2"
+                            class="p-2 hover:cursor-pointer hover:text-light hover:border-b-light/80 hover:border-b-2"
                             href="#about">About</a>
                     </li>
                     <li class="px-4"><a
-                            class="p-2 hover:cursor-pointer hover:text-primary hover:border-b-primary/80 hover:border-b-2"
+                            class="p-2 hover:cursor-pointer hover:text-light hover:border-b-light/80 hover:border-b-2"
                             href="#team">Our
                             Team</a>
                     </li>
                     <li class="px-4"><a
-                            class="p-2 hover:cursor-pointer hover:text-primary hover:border-b-primary/80 hover:border-b-2"
+                            class="p-2 hover:cursor-pointer hover:text-light hover:border-b-light/80 hover:border-b-2"
                             href="#testimonials">Testimonials</a></li>
                 </ul>
                 <button id="theme-toggle"
-                    class="p-2 ml-5 rounded-full hover:bg-gray-800 transition-colors relative overflow-hidden">
+                    class="p-2 ml-5 rounded-full hover:bg-dark/80 transition-colors relative overflow-hidden">
                     <div class="relative z-10">
+                        <!-- Sun == Light mode -->
                         <svg id="sun-icon" class="w-6 h-6 hidden text-yellow-500" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
                             </path>
                         </svg>
-                        <svg id="moon-icon" class="w-6 h-6 text-gray-700 hover:text-light " fill="none"
+                        <!-- Moon == Dark mode -->
+                        <svg id="moon-icon" class="w-6 h-6 text-dark hover:fill-light/80 hover:text-light " fill="dark"
                             stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
@@ -410,7 +412,7 @@
         </section>
 
         <!-- Team Section -->
-        <section id="team" class="min-h-screen flex flex-col justify-center items-center">
+        <section id="team" class="min-h-screen flex flex-col justify-center items-center py-10 lg:m-10">
             <div class="flex flex-col items-center gap-6 mb-10">
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">Our Team</h2>
                 <p class="text-base sm:text-lg md:text-xl text-dark sm:mx-10">Meet the talented individuals who make
@@ -423,7 +425,8 @@
                     <div class="swiper-slide flex flex-col items-center gap-4 ">
                         <div class="glass-dark bg-dark/20 px-4 py-6 rounded-2xl max-w-fit mx-auto">
                             <div>
-                                <img src="./img/Team/CEO.jpg" class="max-w-50 max-h-50 mx-auto rounded-full mb-4"
+                                <img src="./img/Team/CEO.jpg"
+                                    class="max-w-50 max-h-50 mx-auto rounded-full mb-4 shadow-2xl border-4 border-primary/45"
                                     alt="">
                             </div>
                             <div class="flex flex-col justify-center items-center gap-1 max-w-fit mx-auto">
@@ -442,7 +445,8 @@
                     <div class="swiper-slide flex flex-col items-center gap-4">
                         <div class="glass-dark bg-dark/20 px-4 py-6 rounded-2xl max-w-fit mx-auto">
                             <div>
-                                <img src="./img/Team/Chief.jpg" class="max-w-50 max-h-50 mx-auto rounded-full mb-4"
+                                <img src="./img/Team/Chief.jpg"
+                                    class="max-w-50 max-h-50 mx-auto rounded-full mb-4 shadow-2xl border-4 border-primary/45"
                                     alt="">
                             </div>
                             <div class="flex flex-col justify-center items-center gap-1 max-w-fit mx-auto">
@@ -460,7 +464,8 @@
                     <div class="swiper-slide flex flex-col items-center gap-4">
                         <div class="glass-dark bg-dark/20 px-4 py-6 rounded-2xl max-w-fit mx-auto">
                             <div>
-                                <img src="./img/Team/lead.jpg" class="max-w-50 max-h-50 mx-auto rounded-full mb-4"
+                                <img src="./img/Team/lead.jpg"
+                                    class="max-w-50 max-h-50 mx-auto rounded-full mb-4 shadow-2xl border-4 border-primary/45"
                                     alt="">
                             </div>
                             <div class="flex flex-col justify-center items-center gap-2 max-w-fit mx-auto">
@@ -478,7 +483,8 @@
                         <div class="glass-dark bg-dark/20 px-4 py-6 rounded-2xl max-w-fit mx-auto">
                             <div>
                                 <img src="./img/Team/head-of-customer.jpg"
-                                    class="max-w-50 max-h-50 mx-auto rounded-full mb-4" alt="">
+                                    class="max-w-50 max-h-50 mx-auto rounded-full mb-4 shadow-2xl border-4 border-primary/45"
+                                    alt="">
                             </div>
                             <div class="flex flex-col justify-center items-center gap-2 max-w-fit mx-auto">
                                 <h3 class="text-2xl font-bold">Sophia Turner</h3>
@@ -496,7 +502,8 @@
                     <div class="swiper-slide flex flex-col items-center">
                         <div class="glass-dark bg-dark/20 px-4 py-6 rounded-2xl max-w-fit mx-auto">
                             <div>
-                                <img src="./img/Team/Business.jpg" class="max-w-50 max-h-50 mx-auto rounded-full mb-4"
+                                <img src="./img/Team/Business.jpg"
+                                    class="max-w-50 max-h-50 mx-auto rounded-full mb-4 shadow-2xl border-4 border-primary/45"
                                     alt="">
                             </div>
                             <div class="flex flex-col justify-center items-center gap-2 max-w-fit mx-auto">
@@ -513,11 +520,13 @@
                 </div>
 
                 <!-- Add Pagination -->
-                <div class="swiper-pagination "></div>
+                <div class="swiper-pagination"></div>
 
                 <!-- Add Navigation arrows -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <button
+                    class="swiper-button-next hidden md:flex glass-dark p-6 w-12! h-12! bg-dark/30  rounded-full! "></button>
+                <button
+                    class="swiper-button-prev hidden md:flex glass-dark p-6 w-12! h-12! bg-dark/30 text-primary! rounded-full! "></button>
 
             </div>
         </section>

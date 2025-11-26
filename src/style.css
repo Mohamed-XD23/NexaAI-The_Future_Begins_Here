@@ -48,6 +48,19 @@
       transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
     }
   }
+
+  /*  Customize swiper buttons in mobile*/
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+
+  @media (min-width: 768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: flex !important;
+    }
+  }
 }
 
 @layer utilities {
@@ -97,8 +110,13 @@
     @apply text-3xl text-primary;
   }
 
-  .swiper-pagination-bullet-active {
-    @apply bg-accent;
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    @apply text-3xl! font-bold!;
+  }
+
+  .swiper-pagination-bullet {
+    @apply bg-primary! w-5! h-5!;
   }
 }
 
