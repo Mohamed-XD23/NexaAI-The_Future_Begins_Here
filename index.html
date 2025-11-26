@@ -7,10 +7,12 @@
     <title>NexaAI - The Future Begins Here</title>
     <!-- FontAwesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Add Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="./dist/output.css" rel="stylesheet">
 </head>
 
-<body class="relative w-full h-screen mx-auto bg-light  font-sansation ">
+<body class="relative w-full h-screen mx-auto bg-light font-sansation  ">
     <!-- Background shapes -->
     <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/45 rounded-full blur-3xl animate-shape">
@@ -24,7 +26,7 @@
     </div>
 
     <!-- Header -->
-    <header class=" glass bg-light/30 fixed top-0  w-full z-50 text-dark px-6 py-4 mb-8 ">
+    <header class=" glass bg-dark/30 fixed top-0  w-full z-50 text-dark px-6 py-4 mb-8 ">
         <div class="max-w-main mx-auto flex flex-row justify-between ">
             <div class="flex flex-row gap-2 justify-center items-center">
                 <!-- Company Logo -->
@@ -241,23 +243,27 @@
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="min-h-screen glass bg-light/40 flex flex-col justify-center items-center p-10">
+        <section id="services"
+            class="min-h-screen glass bg-light/40 flex flex-col justify-center items-center p-4 sm:p-6 md:p-10 mt-10">
             <div class="flex flex-col items-center gap-6">
-                <h2 class="text-5xl font-bold">Our Services</h2>
-                <p class="text-lg text-dark mx-10">We offer a range of services to help you leverage the power of AI
-                    and machine learning to improve your business processes and decision-making.</p>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">Our Services</h2>
+                <p class="text-base sm:text-lg md:text-xl text-dark sm:mx-10">We offer a range of services to help you
+                    leverage the power of AI and machine learning to improve your business processes and
+                    decision-making.</p>
             </div>
             <!-- Services Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 pt-20 gap-6 mx-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 pt-20 gap-6 min-w-full sm:mx-10">
                 <!-- Service 1 -->
                 <div
                     class="card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-primary/30 transition-all ease-in-out ">
-                    <div class="flex items-center justify-center gap-2 p-4 ">
+                    <div class="flex items-center justify-center gap-4 sm:p-4 md:p-6 lg:p-8 ">
                         <i class="fa-solid fa-brain text-4xl text-dark"></i>
-                        <h3 class="text-2xl font-semibold">Custom AI Model Development</h3>
+                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">Custom AI Model Development
+                        </h3>
                     </div>
                     <div class="text-dark">
-                        <p class="text-xl">We design and train machine learning models tailored to your specific use
+                        <p class="text-base sm:text-lg md:text-xl lg:text-2xl">We design and train machine learning
+                            models tailored to your specific use
                             case, from computer vision to natural language processing.</p>
                     </div>
                     <div>
@@ -270,12 +276,14 @@
                 <!-- Service 2 -->
                 <div
                     class=" card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-secondary/30 transition-all ease-in-out ">
-                    <div class="flex items-center justify-center gap-2 p-4 ">
+                    <div class="flex items-center justify-center gap-4 sm:p-4 md:p-6 lg:p-8 ">
                         <i class="fa-solid fa-headset text-4xl text-dark"></i>
-                        <h3 class="text-2xl font-semibold">AI Chatbots & Virtual Assistants</h3>
+                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">AI Chatbots & Virtual
+                            Assistants</h3>
                     </div>
                     <div class="text-dark">
-                        <p class="text-xl">24/7 intelligent support for your customers on web, mobile, and social media
+                        <p class="text-base sm:text-lg md:text-xl lg:text-2xl">24/7 intelligent support for your
+                            customers on web, mobile, and social media
                             platforms powered by advanced conversational AI.</p>
                     </div>
                     <div>
@@ -288,12 +296,13 @@
                 <!-- Service 3 -->
                 <div
                     class=" card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-accent/40 to-accent/10 transition-all ease-in-out">
-                    <div class="flex items-center justify-center gap-2 p-4 ">
+                    <div class="flex items-center justify-center gap-4 sm:p-4 md:p-6 lg:p-8 ">
                         <i class="fa-solid fa-chart-bar text-4xl text-dark"></i>
-                        <h3 class="text-2xl font-semibold">Predictive Analytics</h3>
+                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">Predictive Analytics</h3>
                     </div>
                     <div class="text-dark">
-                        <p class="text-xl">Forecast demand, detect trends, and improve decision-making with predictive
+                        <p class="text-base sm:text-lg md:text-xl lg:text-2xl">Forecast demand, detect trends, and
+                            improve decision-making with predictive
                             models that learn from your business data.</p>
                     </div>
                     <div>
@@ -306,12 +315,13 @@
                 <!-- Service 4 -->
                 <div
                     class="relative card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-fuchsia-600/20 to-fuchsia-200/20 transition-all ease-in-out ">
-                    <div class="flex items-center justify-center gap-2 p-4 ">
+                    <div class="flex items-center justify-center gap-4 sm:p-4 md:p-6 lg:p-8 ">
                         <i class="fa-solid fa-gears text-4xl text-dark"></i>
-                        <h3 class="text-2xl font-semibold">Process Automation</h3>
+                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">Process Automation</h3>
                     </div>
                     <div class="text-dark">
-                        <p class="text-xl">Automate repetitive workflows using AI and rule-based engines, saving your
+                        <p class="text-base sm:text-lg md:text-xl lg:text-2xl">Automate repetitive workflows using AI
+                            and rule-based engines, saving your
                             team up to 70% of their time.</p>
                     </div>
                     <div>
@@ -325,38 +335,49 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="min-h-screen glass-dark bg-dark/20 flex flex-col justify-center items-center p-10">
+        <section id="about"
+            class="min-h-screen glass-dark bg-dark/20 flex flex-col justify-center items-center p-2 sm:p-4 md:p-6 lg:p-10">
             <div class="flex flex-col items-center gap-6">
-                <h2 class="text-5xl font-bold">About Us</h2>
-                <p class="text-lg text-dark mx-10">Discover our journey, values, and commitment to making artificial
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">About Us</h2>
+                <p class="text-base sm:text-lg md:text-xl text-dark sm:mx-10">Discover our journey, values, and
+                    commitment to making artificial
                     intelligence accessible and impactful for businesses worldwide.</p>
             </div>
             <div
-                class="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center justify-start gap-16 m-10">
-                <div class="flex flex-col gap-6">
-                    <p class="text-xl text-dark"><span class="font-bold text-primary text-2xl">NexaAI Solutions</span>
+                class="container px-4 sm:px-2 md:px-0 flex flex-col-reverse lg:flex-row items-center justify-start gap-10 my-10">
+                <div class="max-w-full sm:max-w-11/12 lg:max-w-1/2 flex flex-col gap-6">
+                    <p class="text-base sm:text-lg md:text-xl text-dark"><span
+                            class="font-bold text-primary text-xl sm:text-2xl">NexaAI Solutions</span>
                         is a
                         technology company focused on building
                         practical, business-ready AI products. Founded in 2020 by a group of engineers and data
                         scientists,
                         our mission is to make artificial intelligence accessible to companies of all sizes.</p>
 
-                    <div class="text-xl font-bold text-dark flex flex-col gap-2">We believe that AI should be:
-                        <p class="text-xl font-normal"> <span class="text-2xl font-semibold text-secondary">Practical :
+                    <div class="text-lg sm:text-xl font-bold text-dark flex flex-col gap-2">We believe that AI should
+                        be:
+                        <p class="text-base sm:text-lg font-normal"> <span
+                                class="text-xl sm:text-2xl font-semibold text-dark">Practical <i
+                                    class="fa-solid fa-wrench text-dark text-lg"></i> :
                             </span> Solving
                             real
                             business
                             challenges</p>
-                        <p class="text-xl font-normal"> <span class="text-2xl font-semibold text-secondary">Accessible :
+                        <p class="text-base sm:text-lg font-normal"> <span
+                                class="text-xl sm:text-2xl font-semibold text-dark">Accessible <i
+                                    class="fa-solid fa-universal-access text-dark text-lg"></i> :
                             </span>
                             Available to
                             companies
                             of all sizes</p>
-                        <p class="text-xl font-normal"> <span class="text-2xl font-semibold text-secondary">Transparent
-                                : </span> Clear,
+                        <p class="text-base sm:text-lg font-normal"> <span
+                                class="text-xl sm:text-2xl font-semibold text-dark">Transparent <i
+                                    class="fa-solid fa-eye text-dark text-lg"></i> : </span> Clear,
                             explainable
                             results</p>
-                        <p class="text-xl font-normal"> <span class="text-2xl font-semibold text-secondary">Ethical :
+                        <p class="text-base sm:text-lg font-normal"> <span
+                                class="text-xl sm:text-2xl font-semibold text-dark">Ethical <i
+                                    class="fa-solid fa-scale-balanced text-dark text-lg"></i> :
                             </span> Built with
                             responsibility
                             and fairness</p>
@@ -364,7 +385,7 @@
                 </div>
 
                 <div class="relative">
-                    <img src="./img/About.jpg" class="min-w-full h-1/4 sm:h-1/4 md:min-h-full rounded-3xl shadow-2xl "
+                    <img src="./img/About.jpg" class="min-w-full rounded-3xl shadow-2xl "
                         alt="Modern tech startup workspace with collaborative meeting rooms, stylish seating, and industrial design elements">
 
                     <!-- Card -->
@@ -388,8 +409,129 @@
             </div>
         </section>
 
+        <!-- Team Section -->
+        <section id="team" class="min-h-screen flex flex-col justify-center items-center">
+            <div class="flex flex-col items-center gap-6 mb-10">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">Our Team</h2>
+                <p class="text-base sm:text-lg md:text-xl text-dark sm:mx-10">Meet the talented individuals who make
+                    NexaAI Solutions a reality.</p>
+            </div>
+            <div class="swiper team-swiper w-full mx-auto px-6 md:px-12 lg:px-20">
+                <!-- Swiper wrapper -->
+                <div class="swiper-wrapper pb-10">
+                    <!-- Team member 1 -->
+                    <div class="swiper-slide flex flex-col items-center gap-4 ">
+                        <div class="glass-dark bg-dark/20 px-4 py-6 rounded-2xl max-w-fit mx-auto">
+                            <div>
+                                <img src="./img/Team/CEO.jpg" class="max-w-50 max-h-50 mx-auto rounded-full mb-4"
+                                    alt="">
+                            </div>
+                            <div class="flex flex-col justify-center items-center gap-1 max-w-fit mx-auto">
+                                <h3 class="text-xl font-bold">Dr. Ethan Clark</h3>
+                                <p class="text-sm bg-primary/30 p-2.5 rounded-2xl text-dark font-semibold">CEO & Founder
+                                </p>
+                                <p class="text-sm max-w-60">AI researcher with 15+ years of experience in machine
+                                    learning
+                                    and
+                                    data
+                                    science.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team member 2 -->
+                    <div class="swiper-slide flex flex-col items-center gap-4">
+                        <div class="glass-dark bg-dark/20 px-4 py-6 rounded-2xl max-w-fit mx-auto">
+                            <div>
+                                <img src="./img/Team/Chief.jpg" class="max-w-50 max-h-50 mx-auto rounded-full mb-4"
+                                    alt="">
+                            </div>
+                            <div class="flex flex-col justify-center items-center gap-1 max-w-fit mx-auto">
+                                <h3 class="text-xl font-bold">Olivia Brooks</h3>
+                                <p class="text-sm bg-primary/30 p-2.5 rounded-2xl text-dark font-semibold">Chief
+                                    Technology
+                                    Officer</p>
+                                <p class="text-sm max-w-60">Leads our engineering team and designs large-scale AI
+                                    architectures.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team member 3 -->
+                    <div class="swiper-slide flex flex-col items-center gap-4">
+                        <div class="glass-dark bg-dark/20 px-4 py-6 rounded-2xl max-w-fit mx-auto">
+                            <div>
+                                <img src="./img/Team/lead.jpg" class="max-w-50 max-h-50 mx-auto rounded-full mb-4"
+                                    alt="">
+                            </div>
+                            <div class="flex flex-col justify-center items-center gap-2 max-w-fit mx-auto">
+                                <h3 class="text-xl font-bold">Daniel Wright</h3>
+                                <p class="text-sm bg-primary/30 p-2.5 rounded-2xl text-dark font-semibold">Product &
+                                    Projects Lead</p>
+                                <p class="text-sm max-w-60">Ensures every project is delivered on time and aligned with
+                                    business
+                                    goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team member 4 -->
+                    <div class="swiper-slide flex flex-col items-center gap-4">
+                        <div class="glass-dark bg-dark/20 px-4 py-6 rounded-2xl max-w-fit mx-auto">
+                            <div>
+                                <img src="./img/Team/head-of-customer.jpg"
+                                    class="max-w-50 max-h-50 mx-auto rounded-full mb-4" alt="">
+                            </div>
+                            <div class="flex flex-col justify-center items-center gap-2 max-w-fit mx-auto">
+                                <h3 class="text-2xl font-bold">Sophia Turner</h3>
+                                <p class="text-sm bg-primary/30 p-2.5 rounded-2xl text-dark font-semibold">Head of
+                                    Customer
+                                    Experience</p>
+                                <p class="text-sm max-w-60">Helps clients turn ideas into successful AI products and
+                                    smooth
+                                    user
+                                    journeys.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team member 5 -->
+                    <div class="swiper-slide flex flex-col items-center">
+                        <div class="glass-dark bg-dark/20 px-4 py-6 rounded-2xl max-w-fit mx-auto">
+                            <div>
+                                <img src="./img/Team/Business.jpg" class="max-w-50 max-h-50 mx-auto rounded-full mb-4"
+                                    alt="">
+                            </div>
+                            <div class="flex flex-col justify-center items-center gap-2 max-w-fit mx-auto">
+                                <h3 class="text-2xl font-bold">Emma Collins</h3>
+                                <p class="text-sm bg-primary/30 p-2.5 rounded-2xl text-dark font-semibold">Business
+                                    Development Lead</p>
+                                <p class="text-sm max-w-60">Ensures every AI project runs smoothly and delivers real
+                                    business
+                                    value.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination "></div>
+
+                <!-- Add Navigation arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </section>
+
     </main>
 
+    <!-- Add Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Add jQuery if not already included -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- custom script -->
+    <script src="./src/script.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-family-sansation: "Sansation", sans-serif;
+  --font-sansation: "Sansation", sans-serif;
   --min-width-main: 1280px;
   --max-width-main: 1280px;
   --color-primary: #3b82f6;
@@ -74,6 +74,31 @@
 
   .card-big {
     @apply h-full px-10 py-15 rounded-3xl;
+  }
+
+  .swiper {
+    @apply w-full h-full overflow-hidden mx-auto my-0;
+  }
+
+  .swiper-wrapper {
+    @apply flex items-center;
+  }
+
+  .swiper-slide {
+    @apply text-center flex justify-center items-center;
+  }
+
+  .team-swiper {
+    @apply w-full px-0 py-40;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    @apply text-3xl text-primary;
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply bg-accent;
   }
 }
 
