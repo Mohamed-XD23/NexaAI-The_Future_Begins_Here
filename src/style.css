@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Sansation:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 @import "tailwindcss";
 
 @theme {
-  --font-sansation: "Sansation", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
   --min-width-main: 1280px;
   --max-width-main: 1280px;
   --color-primary: #3b82f6;
@@ -48,18 +47,18 @@
       transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
     }
   }
+}
 
-  /*  Customize swiper buttons in mobile*/
+/*  Customize swiper buttons in mobile*/
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
   .swiper-button-next,
   .swiper-button-prev {
-    display: none !important;
-  }
-
-  @media (min-width: 768px) {
-    .swiper-button-next,
-    .swiper-button-prev {
-      display: flex !important;
-    }
+    display: flex !important;
   }
 }
 
