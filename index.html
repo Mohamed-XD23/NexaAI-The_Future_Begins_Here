@@ -109,7 +109,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="min-h-screen flex items-center pt-20 relative ">
+        <section id="home" class="max-w-main mx-auto min-h-screen flex items-center pt-20 relative ">
             <div class="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center justify-between gap-16">
                 <div class="lg:w-1/2 text-center">
                     <div
@@ -180,7 +180,8 @@
         </section>
 
         <!-- Features Section -->
-        <section id="features" class="min-h-screen flex flex-col justify-center items-center pt-10 mt-10">
+        <section id="features"
+            class="max-w-main mx-auto min-h-screen flex flex-col justify-center items-center pt-10 mt-10">
             <div class="flex flex-col items-center gap-6">
                 <h2 class="text-5xl font-bold">Our Features</h2>
                 <p class="text-lg text-dark mx-10">We offer cutting-edge
@@ -246,99 +247,105 @@
 
         <!-- Services Section -->
         <section id="services"
-            class="min-h-screen glass bg-light/40 flex flex-col justify-center items-center p-4 sm:p-6 md:p-10 mt-10">
-            <div class="flex flex-col items-center gap-6">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">Our Services</h2>
-                <p class="text-base sm:text-lg md:text-xl text-dark sm:mx-10">We offer a range of services to help you
-                    leverage the power of AI and machine learning to improve your business processes and
-                    decision-making.</p>
-            </div>
-            <!-- Services Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 pt-20 gap-6 min-w-full sm:mx-10">
-                <!-- Service 1 -->
-                <div
-                    class="card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-primary/30 transition-all ease-in-out ">
-                    <div class="flex items-center justify-center gap-4 sm:p-4 md:p-6 lg:p-8 ">
-                        <i class="fa-solid fa-brain text-4xl text-dark"></i>
-                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">Custom AI Model Development
-                        </h3>
-                    </div>
-                    <div class="text-dark">
-                        <p class="text-base sm:text-lg md:text-xl lg:text-2xl">We design and train machine learning
-                            models tailored to your specific use
-                            case, from computer vision to natural language processing.</p>
-                    </div>
-                    <div>
-                        <a href="#"
-                            class="text-primary absolute right-10 bottom-5 text-lg font-semibold hover:underline transition-all ease-in-out ">Read
-                            More<i class="fa-solid fa-arrow-right-long pl-3"></i></a>
-                    </div>
+            class=" min-h-screen glass bg-light/40 flex flex-col justify-center items-center p-4 sm:p-6 md:p-10 mt-10">
+            <div class="max-w-main mx-auto">
+                <div class="flex flex-col items-center gap-6">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">Our Services</h2>
+                    <p class="text-base sm:text-lg md:text-xl text-dark sm:mx-10">We offer a range of services to help
+                        you
+                        leverage the power of AI and machine learning to improve your business processes and
+                        decision-making.</p>
                 </div>
+                <!-- Services Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 pt-20 gap-6 min-w-full sm:mx-10">
+                    <!-- Service 1 -->
+                    <div
+                        class="card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-primary/30 transition-all ease-in-out ">
+                        <div class="flex items-center justify-center gap-4 sm:p-4 md:p-6 lg:p-8 ">
+                            <i class="fa-solid fa-brain text-4xl text-dark"></i>
+                            <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">Custom AI Model
+                                Development
+                            </h3>
+                        </div>
+                        <div class="text-dark">
+                            <p class="text-base sm:text-lg md:text-xl lg:text-2xl">We design and train machine learning
+                                models tailored to your specific use
+                                case, from computer vision to natural language processing.</p>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class="text-primary absolute right-10 bottom-5 text-lg font-semibold hover:underline transition-all ease-in-out ">Read
+                                More<i class="fa-solid fa-arrow-right-long pl-3"></i></a>
+                        </div>
+                    </div>
 
-                <!-- Service 2 -->
-                <div
-                    class=" card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-secondary/30 transition-all ease-in-out ">
-                    <div class="flex items-center justify-center gap-4 sm:p-4 md:p-6 lg:p-8 ">
-                        <i class="fa-solid fa-headset text-4xl text-dark"></i>
-                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">AI Chatbots & Virtual
-                            Assistants</h3>
+                    <!-- Service 2 -->
+                    <div
+                        class=" card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-secondary/30 transition-all ease-in-out ">
+                        <div class="flex items-center justify-center gap-4 sm:p-4 md:p-6 lg:p-8 ">
+                            <i class="fa-solid fa-headset text-4xl text-dark"></i>
+                            <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">AI Chatbots & Virtual
+                                Assistants</h3>
+                        </div>
+                        <div class="text-dark">
+                            <p class="text-base sm:text-lg md:text-xl lg:text-2xl">24/7 intelligent support for your
+                                customers on web, mobile, and social media
+                                platforms powered by advanced conversational AI.</p>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class="text-emerald-600 absolute right-10 bottom-5 text-lg font-semibold hover:underline transition-all ease-in-out ">Read
+                                More<i class="fa-solid fa-arrow-right-long pl-3"></i></a>
+                        </div>
                     </div>
-                    <div class="text-dark">
-                        <p class="text-base sm:text-lg md:text-xl lg:text-2xl">24/7 intelligent support for your
-                            customers on web, mobile, and social media
-                            platforms powered by advanced conversational AI.</p>
+
+                    <!-- Service 3 -->
+                    <div
+                        class=" card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-accent/40 to-accent/10 transition-all ease-in-out">
+                        <div class="flex items-center justify-center gap-4 sm:p-4 md:p-6 lg:p-8 ">
+                            <i class="fa-solid fa-chart-bar text-4xl text-dark"></i>
+                            <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">Predictive Analytics
+                            </h3>
+                        </div>
+                        <div class="text-dark">
+                            <p class="text-base sm:text-lg md:text-xl lg:text-2xl">Forecast demand, detect trends, and
+                                improve decision-making with predictive
+                                models that learn from your business data.</p>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class="text-amber-600 absolute right-10 bottom-5 text-lg font-semibold hover:underline transition-all ease-in-out ">Read
+                                More<i class="fa-solid fa-arrow-right-long pl-3"></i></a>
+                        </div>
                     </div>
-                    <div>
-                        <a href="#"
-                            class="text-emerald-600 absolute right-10 bottom-5 text-lg font-semibold hover:underline transition-all ease-in-out ">Read
-                            More<i class="fa-solid fa-arrow-right-long pl-3"></i></a>
+
+                    <!-- Service 4 -->
+                    <div
+                        class="relative card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-fuchsia-600/20 to-fuchsia-200/20 transition-all ease-in-out ">
+                        <div class="flex items-center justify-center gap-4 sm:p-4 md:p-6 lg:p-8 ">
+                            <i class="fa-solid fa-gears text-4xl text-dark"></i>
+                            <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">Process Automation</h3>
+                        </div>
+                        <div class="text-dark">
+                            <p class="text-base sm:text-lg md:text-xl lg:text-2xl">Automate repetitive workflows using
+                                AI
+                                and rule-based engines, saving your
+                                team up to 70% of their time.</p>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class="text-fuchsia-600 absolute right-10 bottom-5 text-lg font-semibold hover:underline transition-all ease-in-out ">Read
+                                More<i class="fa-solid fa-arrow-right-long pl-3"></i></a>
+                        </div>
                     </div>
+
                 </div>
-
-                <!-- Service 3 -->
-                <div
-                    class=" card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-accent/40 to-accent/10 transition-all ease-in-out">
-                    <div class="flex items-center justify-center gap-4 sm:p-4 md:p-6 lg:p-8 ">
-                        <i class="fa-solid fa-chart-bar text-4xl text-dark"></i>
-                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">Predictive Analytics</h3>
-                    </div>
-                    <div class="text-dark">
-                        <p class="text-base sm:text-lg md:text-xl lg:text-2xl">Forecast demand, detect trends, and
-                            improve decision-making with predictive
-                            models that learn from your business data.</p>
-                    </div>
-                    <div>
-                        <a href="#"
-                            class="text-amber-600 absolute right-10 bottom-5 text-lg font-semibold hover:underline transition-all ease-in-out ">Read
-                            More<i class="fa-solid fa-arrow-right-long pl-3"></i></a>
-                    </div>
-                </div>
-
-                <!-- Service 4 -->
-                <div
-                    class="relative card-big glass bg-dark/30 flex flex-col items-center gap-4 hover:bg-linear-to-r from-fuchsia-600/20 to-fuchsia-200/20 transition-all ease-in-out ">
-                    <div class="flex items-center justify-center gap-4 sm:p-4 md:p-6 lg:p-8 ">
-                        <i class="fa-solid fa-gears text-4xl text-dark"></i>
-                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">Process Automation</h3>
-                    </div>
-                    <div class="text-dark">
-                        <p class="text-base sm:text-lg md:text-xl lg:text-2xl">Automate repetitive workflows using AI
-                            and rule-based engines, saving your
-                            team up to 70% of their time.</p>
-                    </div>
-                    <div>
-                        <a href="#"
-                            class="text-fuchsia-600 absolute right-10 bottom-5 text-lg font-semibold hover:underline transition-all ease-in-out ">Read
-                            More<i class="fa-solid fa-arrow-right-long pl-3"></i></a>
-                    </div>
-                </div>
-
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about"
-            class="min-h-screen glass-dark bg-dark/20 flex flex-col justify-center items-center p-2 sm:p-4 md:p-6 lg:p-10">
+            class=" min-h-screen glass-dark bg-dark/20 flex flex-col justify-center items-center p-2 sm:p-4 md:p-6 lg:p-10">
             <div class="flex flex-col items-center gap-6">
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">About Us</h2>
                 <p class="text-base sm:text-lg md:text-xl text-dark sm:mx-10">Discover our journey, values, and
@@ -346,7 +353,7 @@
                     intelligence accessible and impactful for businesses worldwide.</p>
             </div>
             <div
-                class="container px-4 sm:px-2 md:px-0 flex flex-col-reverse lg:flex-row items-center justify-start gap-10 my-10">
+                class="max-w-main mx-auto px-4 sm:px-2 md:px-0 flex flex-col-reverse lg:flex-row items-center justify-start gap-10 my-10">
                 <div class="max-w-full sm:max-w-11/12 lg:max-w-1/2 flex flex-col gap-6">
                     <p class="text-base sm:text-lg md:text-xl text-dark"><span
                             class="font-bold text-primary text-xl sm:text-2xl">NexaAI Solutions</span>
@@ -412,7 +419,7 @@
         </section>
 
         <!-- Team Section -->
-        <section id="team" class="flex flex-col justify-center items-center p-4 sm:p-6 md:p-10 lg:m-10">
+        <section id="team" class="min-h-screen flex flex-col justify-center items-center p-4 sm:p-6 md:p-10 lg:m-10">
             <div class="flex flex-col items-center gap-6 mb-10">
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">Our Team</h2>
                 <p class="text-base sm:text-lg md:text-xl text-dark sm:mx-10">Meet the talented individuals who make
@@ -532,7 +539,8 @@
         </section>
 
         <!-- Why Choose Us Section -->
-        <section class="min-h-screen flex flex-col justify-evenly items-center p-4 sm:p-6 md:p-10 m-10">
+        <section
+            class="max-w-main mx-auto min-h-screen flex flex-col justify-evenly items-center p-4 sm:p-6 md:p-10 m-10">
             <div class="flex flex-col items-center gap-6 my-10">
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">Why Us ?</h2>
                 <p class="text-base sm:text-lg md:text-xl text-dark sm:mx-10">We deliver value, not just code.</p>
